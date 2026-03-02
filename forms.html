@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forms | Cola-met Baseball Stats</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS (page-specific) -->
+  <style>
+    /* Make the left title look like your mock */
+    .block-title{
+      font-size: 22px;
+      font-weight: 900;
+      margin: 0 0 10px;
+      text-shadow:
+        -2px -2px 0 #ffffff,
+         2px -2px 0 #ffffff,
+        -2px  2px 0 #ffffff,
+         2px  2px 0 #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo-box">CM</div>
+          <div>
+            <div class="brand-title">Cola-met</div>
+            <div class="brand-sub">Baseball Stats</div>
+          </div>
+        </div>
+
+        <nav class="navlinks" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="teams.html">Teams</a>
+          <a href="player-stats.html">Player Stats</a>
+          <a href="rankings.html">Rankings</a>
+          <a href="forms.html">Forms</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-title">
+      <h1 class="title-outline">Forms</h1>
+    </div>
+    <p class="subtitle">
+      See that we got something wrong? Help us get back on track with a simple form submission.
+      We rely on coaches, parents, and fans to ensure our data is 100% accurate.
+    </p>
+
+    <section class="two-col">
+      <!-- Left: Our Info -->
+      <div class="form-card">
+        <h2 class="block-title">Our Info</h2>
+
+        <div class="info-row">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span>info@colametbaseballstats.com</span>
+        </div>
+
+        <div class="info-row">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 2h4l2 5-3 2c1 3 3 5 6 6l2-3 5 2v4c0 1-1 2-2 2C10 20 4 14 4 6c0-1 1-2 2-2z"
+              fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span>803-000-0000</span>
+        </div>
+
+        <div class="info-row">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21s7-6 7-12a7 7 0 10-14 0c0 6 7 12 7 12z"
+              fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 9a2 2 0 110 4 2 2 0 010-4z"
+              fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span>Columbia, South Carolina</span>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="form-card">
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div>
+              <label for="firstName">First Name</label>
+              <input id="firstName" name="firstName" type="text" autocomplete="given-name">
+            </div>
+
+            <div>
+              <label for="lastName">Last Name</label>
+              <input id="lastName" name="lastName" type="text" autocomplete="family-name">
+            </div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" autocomplete="email">
+          </div>
+
+          <div style="margin-top: 10px;">
+            <label for="submissionType">Submission Type</label>
+            <input id="submissionType" name="submissionType" type="text" placeholder="e.g., Score correction">
+          </div>
+
+          <div style="margin-top: 10px;">
+            <label for="message">Message / Details</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Submit Correction</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <p class="small" style="text-align:center; margin-top: 14px;">
+      Verification Policy: All submissions are cross-referenced with official school records and score books.
+      Please allow 24–48 hours for updates.
+    </p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="small">© 2026 Cola-met Baseball Stats</p>
+    </div>
+  </footer>
+</body>
+</html>

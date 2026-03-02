@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cola-met Baseball Stats | Home</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- INTERNAL CSS (required) -->
+  <style>
+    /* Internal CSS example: slightly customize the Home hero spacing */
+    .hero-inner { padding-top: 40px; }
+    .offer-box { margin-top: 14px; }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <!-- Top Navigation -->
+    <header class="topbar">
+      <div class="container">
+        <div class="nav">
+          <div class="brand">
+            <div class="logo-box">CM</div>
+            <div>
+              <div class="brand-title">Cola-met</div>
+              <div class="brand-sub">Baseball Stats</div>
+            </div>
+          </div>
+
+          <nav class="navlinks" aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="teams.html">Teams</a>
+            <a href="player-stats.html">Player Stats</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="forms.html">Forms</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="container">
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Columbia-Metro Area</h1>
+          <h2>Baseball Stats</h2>
+
+          <p>
+            All the statistics you need to know about Midlands high school baseball.
+            No paywalls. No subscriptions. Just the numbers.
+          </p>
+
+          <div class="btnrow">
+            <a class="btn primary" href="teams.html">View Teams</a>
+
+            <!-- INLINE CSS (required) -->
+            <a class="btn secondary" href="#what-we-offer"
+               style="border-width: 2px; font-weight: 900;">
+              What we offer
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- What we offer -->
+      <section id="what-we-offer" class="section offer-box">
+        <h3>What we offer</h3>
+        <p class="sub">Find every team in the Columbia metro area</p>
+
+        <!-- another inline style example is okay, but you only NEED at least one -->
+        <p style="max-width: 820px; margin: 14px auto 0; text-align:center; font-weight:700; color:#1f5a5a;">
+          Team pages, player stats, and rankings — all in one place. This is a rough draft.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

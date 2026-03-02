@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cola-met Baseball Stats | Teams</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- INTERNAL CSS (required) -->
+  <style>
+    /* Internal CSS example: color the hero-style page title */
+    .page-title h1 { color: #0b1f1f; }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="container">
+        <div class="nav">
+          <div class="brand">
+            <div class="logo-box">CM</div>
+            <div>
+              <div class="brand-title">Cola-met</div>
+              <div class="brand-sub">Baseball Stats</div>
+            </div>
+          </div>
+
+          <nav class="navlinks" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="teams.html">Teams</a>
+            <a href="player-stats.html">Player Stats</a>
+            <a href="ranking.html">Rankings</a>
+            <a href="forms.html">Forms</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="page-title">
+        <h1>Columbia-Metro Area Teams</h1>
+        <p>Browse all high school baseball programs in the South Carolina Midlands area</p>
+      </section>
+
+      <div class="searchbar">
+        <input type="text" placeholder="Search for a school or mascot" aria-label="Search teams">
+      </div>
+
+      <section class="grid" aria-label="Team cards">
+        <article class="card">
+          <div class="badge" style="background:#214c3a;">G</div> <!-- INLINE CSS -->
+          <h2>River Bluff High School</h2>
+          <p class="meta">
+            Record: N/A<br>
+            Rank: N/A<br>
+            Region: 5A-4
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="badge" style="background:#f2b705; color:#0b1f1f;">L</div> <!-- INLINE CSS -->
+          <h3>Lexington High School</h3>
+          <p class="meta">
+            Record: N/A<br>
+            Rank: N/A<br>
+            Region: 5A-4
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="badge" style="background:#0f3a2a;">D</div> <!-- INLINE CSS -->
+          <h4>Dutch Fork High School</h4>
+          <p class="meta">
+            Record: N/A<br>
+            Rank: N/A<br>
+            Region: 5A-4
+          </p>
+        </article>
+      </section>
+
+      <p class="footer-note">
+        Records and rankings will be updated after every game.
+      </p>
+    </main>
+  </div>
+</body>
+</html>
