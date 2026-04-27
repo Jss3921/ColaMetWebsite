@@ -696,3 +696,18 @@ main.container {
   margin-top: 5px;
   color: #4fd1c5; /* optional accent */
 }
+
+.form-logo {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form-logo img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px; /* optional */
+}
+
+.form-card {
+  text-align: center;
+}
