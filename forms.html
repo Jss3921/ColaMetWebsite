@@ -90,7 +90,19 @@
 
       <!-- Right: Form -->
       <div class="form-card">
-        <form action="#" method="post">
+        <div id="confirmationMessage" style="
+  display: none;
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+">
+  ✅ Your submission was successful!
+</div>
+        <form onsubmit="showConfirmation(event)">
           <div class="form-grid">
             <div>
               <label for="firstName">First Name</label>
@@ -136,5 +148,15 @@
       <p class="small">© 2026 Cola-met Baseball Stats</p>
     </div>
   </footer>
+
+  <script>
+  function showConfirmation(event) {
+    event.preventDefault();
+
+    document.getElementById("confirmationMessage").style.display = "block";
+
+    event.target.reset();
+  }
+</script>
 </body>
 </html>
