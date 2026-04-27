@@ -11,7 +11,43 @@
   <style>
     /* Make the leaderboards slightly tighter on this page */
     .leaderboards li { margin: 4px 0; }
-  </style>
+
+    /* MOBILE FIXES */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navlinks {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    .page-title h1 {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    .searchbar input {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+</style>
 </head>
 
 <body>
