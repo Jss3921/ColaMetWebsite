@@ -5,14 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cola-met Baseball Stats | Home</title>
 
-  <!-- EXTERNAL CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- INTERNAL CSS (required) -->
   <style>
-    /* Internal CSS example: slightly customize the Home hero spacing */
     .hero-inner { padding-top: 40px; }
     .offer-box { margin-top: 14px; }
+
+       /* TEAM LOGO SLIDESHOW */
+    .logo-slideshow {
+      margin: 30px auto;
+      padding: 25px;
+      text-align: center;
+      background: #1f5a5a6e;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      max-width: 850px;
+    }
+
+    
+    
+
+    .team-logo-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 180px;
+    }
+
+    .team-logo-box img {
+      max-width: 180px;
+      max-height: 180px;
+      object-fit: contain;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .team-logo-name {
+      margin-top: 12px;
+      font-weight: 700;
+      color: #1f5a5a;
+    }
+
+    /* MOBILE FIXES */
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .navlinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+      }
+
+      .hero-inner h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-inner h2 {
+        font-size: 1.4rem;
+      }
+
+      .btnrow {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -45,9 +109,10 @@
     <main class="container">
       <section class="hero">
         <div class="hero-inner">
-          <h1>Columbia-Metro Area</h1>
-          <h2>Baseball Stats</h2>
-
+          <div class="hero-title">
+            <h1>Columbia-Metro Area</h1>
+            <h2>Baseball Stats</h2>
+          </div>
           <p>
             All the statistics you need to know about Midlands high school baseball.
             No paywalls. No subscriptions. Just the numbers.
@@ -56,11 +121,13 @@
           <div class="btnrow">
             <a class="btn primary" href="teams.html">View Teams</a>
 
+            <div class="hero-image">
+      <img src="images/schsl.webp" alt="Baseball Image">
+    </div>
+
+
             <!-- INLINE CSS (required) -->
-            <a class="btn secondary" href="#what-we-offer"
-               style="border-width: 2px; font-weight: 900;">
-              What we offer
-            </a>
+            
           </div>
         </div>
       </section>
@@ -72,9 +139,24 @@
 
         <!-- another inline style example is okay, but you only NEED at least one -->
         <p style="max-width: 820px; margin: 14px auto 0; text-align:center; font-weight:700; color:#1f5a5a;">
-          Team pages, player stats, and rankings — all in one place. This is a rough draft.
+          Team pages, player stats, and rankings — all in one place. This is for high school baseball players, coaches, and fans from one of the most competative areas in South Carolina Baseball. 
         </p>
       </section>
+
+      <!-- Team Logo Slideshow -->
+      <section class="logo-slider">
+    <img id="logoSlide" src="images/acflora2.png" alt="Team Logo">
+  </section>
+     
+      <section class="quote-section">
+  <h2>Baseball Quotes For Life</h2>
+  <p id="quoteDisplay">Click the button to see a quote.</p>
+  <button onclick="generateQuote()">Show Random Quote</button>
+</section>
+
+<script src="script.js"></script>
+
+
     </main>
   </div>
 </body>
